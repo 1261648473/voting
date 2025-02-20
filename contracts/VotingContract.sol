@@ -34,14 +34,10 @@ contract Create {
     );
 
     address[] public candidateAddress;
-
     mapping(address => Candidate) public candidates;
 
-    /////////////END
     ////////////VOTERS////////////////////////
-
     address[] public votedVoters;
-
     address[] public votersAddress;
     mapping(address => Voter) public voters;
 
@@ -66,7 +62,6 @@ contract Create {
         uint256 voter_vote,
         string voter_ipfs
     );
-
     ////////////VOTERS////////////////////////
 
     constructor() {
@@ -144,8 +139,6 @@ contract Create {
         );
     }
 
-    ///////////////////VOTER/////////////////
-
     function voterRight(
         address _address,
         string memory _name,
@@ -186,7 +179,6 @@ contract Create {
             voter.voter_vote,
             voter.voter_ipfs
         );
-        // }
     }
 
     function vote(address _candidateAddress, uint256 _candidateVoteId)
