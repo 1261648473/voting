@@ -19,7 +19,8 @@
 ### 本地部署和环境配置
 
 #### 项目环境准备
-1. 安装node.js   https://nodejs.org/zh-cn
+1. 安装node.js   https://nodejs.org/zh-cn 
+
    安装yarn   `sudo npm install -g yarn`
 
 2. [创建pinata账号](https://app.pinata.cloud/)
