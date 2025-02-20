@@ -19,7 +19,9 @@
 ### 本地部署和环境配置
 
 #### 项目环境准备
-1. nodejs
+1. 安装node.js   https://nodejs.org/zh-cn
+   安装yarn   `sudo npm install -g yarn`
+
 2. [创建pinata账号](https://app.pinata.cloud/)
     （创建pinata账号使用ipfs服务用于投票中上传候选人和投票人照片）
 3. [创建apikey](https://app.pinata.cloud/developers/api-keys)
@@ -34,7 +36,7 @@
     把JWT写到./context/JWT.js中
 
 #### 项目配置
-1. 依赖安装 `yarn`
+1. 依赖安装 `yarn install`
 2. 启动本地链 `npx hardhat node`
 3. 部署合约（本地） 【这步骤生产环境中用管理员账号进行部署】
     
@@ -46,9 +48,7 @@
     把这个地址写到`./context/constants.js`下的VotingAddress中
 
     `./context/constants.js`页面最底部的networkName，填入你使用的网络地址
-4. 启动前端
-    
-    `yarn dev`
+4. 启动前端  `yarn dev`
     
 
 ### 流程
